@@ -1,0 +1,27 @@
+- category: Wine
+  name: House Pinot Noir
+  photo: red_wine.jpg
+- category: Wine
+  name: House Pinot Grigio
+  photo: white_wine.jpg
+- category: Beer
+  name: House Light Beer
+  photo: busch_light.jpg
+- category: Beer
+  name: Chances are there's a pale ale, an IPA and a Belgian beer in our fridge
+  photo: other_beer.jpg
+- category: Wine
+  name: Various Champagne
+  photo: champagne.jpg
+- category: Whiskey
+  name: Various Bourbon & Scotch around the house
+  photo: bourbon_scotch.jpg
+- category: Cocktail
+  name: Lavender Lemonade
+  photo: lemonade.jpg
+- category: Cocktail
+  name: Old Fashioned
+  photo: old_fashioned.jpg
+- category: Cocktail
+  name: Summer Sangria
+  photo: sangria.jpg

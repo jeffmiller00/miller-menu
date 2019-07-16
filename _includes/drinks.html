@@ -1,96 +1,38 @@
-<section class="no-padding" id="drinks">
-    <div class="container-fluid">
-        <div class="row no-gutter">
-            <div class="col-lg-4 col-sm-6">
-                <a href="#" class="portfolio-box">
-                    <img src="img/drinks/red_wine.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                House Red Wine
-                            </div>
-                            <div class="project-name">
-                                Pinot Noir
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="#" class="portfolio-box">
-                    <img src="img/drinks/white_wine.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                House White Wine
-                            </div>
-                            <div class="project-name">
-                                Pinot Grigio
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="#" class="portfolio-box">
-                    <img src="img/drinks/busch_light.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                House Light Beer
-                            </div>
-                            <div class="project-name">
-                                Busch Light
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="#" class="portfolio-box">
-                    <img src="img/drinks/other_beer.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                Beer
-                            </div>
-                            <div class="project-name">
-                                Chances are there's a pale ale, an ipa and a Belgian beer in our fridge
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="#" class="portfolio-box">
-                    <img src="img/drinks/5.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                Cocktail 1
-                            </div>
-                            <div class="project-name">
-                                &hellip;
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="#" class="portfolio-box">
-                    <img src="img/drinks/6.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                Cocktail 2
-                            </div>
-                            <div class="project-name">
-                                &hellip;
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
+<section class="bg-primary" id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 text-center">
+        <h2 class="section-heading">Drinks</h2>
+<!--                 <hr class="light">
+          <p class="text-faded">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
+          <a href="#" class="btn btn-default btn-xl">Get Started!</a> -->
+      </div>
     </div>
+  </div>
+</section>
+
+<section class="no-padding" id="drinks">
+  <div class="container-fluid">
+    <div class="row no-gutter">
+
+      {% for drink in site.data.drinks %}
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box">
+            <img src="img/drinks/{{ drink.photo }}" class="img-responsive" alt="">
+            <div class="portfolio-box-caption">
+              <div class="portfolio-box-caption-content">
+                <div class="project-category text-faded">
+                    {{ drink.category }}
+                </div>
+                <div class="project-name">
+                    {{ drink.name }}
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      {% endfor %}
+
+    </div>
+  </div>
 </section>
