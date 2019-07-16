@@ -227,6 +227,9 @@ header {
     display: block;
     max-width: 650px;
     margin: 0 auto;
+    img {
+        margin: 0 auto;
+    }
     .portfolio-box-caption {
         color: white;
         opacity: 0;

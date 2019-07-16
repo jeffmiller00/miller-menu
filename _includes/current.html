@@ -1,96 +1,25 @@
 <section class="no-padding" id="current">
-    <div class="container-fluid">
-        <div class="row no-gutter">
-            <div class="col-lg-4 col-sm-6">
-                <a href="#" class="portfolio-box">
-                    <img src="img/current/1.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                Pork
-                            </div>
-                            <div class="project-name">
-                                Pulled pork butt or shoulder
-                            </div>
-                        </div>
-                    </div>
-                </a>
+  <div class="container-fluid">
+    <div class="row no-gutter">
+
+      {% for menu_item in site.data.current %}
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box">
+            <img src="img/current/{{ menu_item.photo }}" class="img-responsive" alt="">
+            <div class="portfolio-box-caption">
+              <div class="portfolio-box-caption-content">
+                <div class="project-category text-faded">
+                    {{ menu_item.category }}
+                </div>
+                <div class="project-name">
+                    {{ menu_item.name }}
+                </div>
+              </div>
             </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="#" class="portfolio-box">
-                    <img src="img/current/2.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                Chicken
-                            </div>
-                            <div class="project-name">
-                                Whole roasted chicken
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="#" class="portfolio-box">
-                    <img src="img/current/3.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                Beef
-                            </div>
-                            <div class="project-name">
-                                Fire grilled steak
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="#" class="portfolio-box">
-                    <img src="img/current/4.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                Pork
-                            </div>
-                            <div class="project-name">
-                                Something else
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="#" class="portfolio-box">
-                    <img src="img/current/5.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                Beef
-                            </div>
-                            <div class="project-name">
-                                Something else
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="#" class="portfolio-box">
-                    <img src="img/current/6.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                Beef &amp; Pork
-                            </div>
-                            <div class="project-name">
-                                Iowa beef burgers &amp; artisanal sausages
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
+          </a>
         </div>
+      {% endfor %}
+
     </div>
+  </div>
 </section>
