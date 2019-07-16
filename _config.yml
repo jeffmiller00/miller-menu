@@ -1,12 +1,13 @@
 # Site settings
 title:
-email:
+email: jeffmiller00@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 
-twitter_username:
-github_username:
+twitter_username: couchchamp
+instagram_username: kristad
+github_username: jeffmiller00
 
 # Build settings
 markdown: kramdown
