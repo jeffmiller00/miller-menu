@@ -11,3 +11,26 @@
 
 <!-- Custom Theme JavaScript -->
 <script src="js/creative.js"></script>
+
+<script type="text/javascript">
+  $('#randomBtn').click(function() {
+      var recipeSlugs = []
+      {% for slug in site.data.random %}
+        recipeSlugs.push('{{ slug }}');
+      {% endfor %}
+
+      var length = recipeSlugs.length;
+      var randomNum = Math.floor(Math.random()*length);
+      var randomItem = recipeSlugs[randomNum];
+
+      var randomRecipe = '<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" src="https://biggreenegg.com/recipes/'+randomItem+'/"></iframe>'
+
+      // replace the contents of the div with the link text
+      $('#randomRecipe').html(randomRecipe);
+
+      $('#randomSwap').hide();
+      $('#randomRecipe').show();
+      // cancel the default action of the link by returning false
+      return false;
+  });
+</script>
