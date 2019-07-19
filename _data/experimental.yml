@@ -1,0 +1,19 @@
+- category: Pork
+  name: Smoked Ham
+  photo: smoked_ham.jpg
+
+- category: Wine
+  name: House Pinot Grigio
+  photo: 5.jpg
+- category: Beer
+  name: House Light Beer
+  photo: 4.jpg
+- category: Beer
+  name: Chances are there's a pale ale, an IPA and a Belgian beer in our fridge
+  photo: 3.jpg
+- category: Wine
+  name: Various Champagne
+  photo: 2.jpg
+- category: Whiskey
+  name: Various Bourbon & Scotch around the house
+  photo: 1.jpg
