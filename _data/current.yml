@@ -7,9 +7,6 @@
 - category: Beef / Chicken / Shrimp / Pork
   name: Tacos
   photo: tacos.jpg
-- category: Beef
-  name: Brisket
-  photo: brisket.jpg
 - category: Chicken
   name: Whole roasted chicken
   photo: chicken.jpg
@@ -19,6 +16,9 @@
 - category: Fish
   name: Salmon
   photo: salmon.jpg
+- category: Beef
+  name: Brisket
+  photo: brisket.jpg
 - category: Chicken
   name: Island Chicken
   photo: island-chicken.jpg

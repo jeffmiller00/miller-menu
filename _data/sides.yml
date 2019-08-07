@@ -1,4 +1,4 @@
-- category: Veggies
+- category: Salad
   name: Homegrown Garden Salad
   photo: salad.jpg
 - category: Veggies
@@ -7,3 +7,6 @@
 - category: Veggies
   name: Roasted broccoli & cauliflower
   photo: broccoli_cauliflower.jpg
+- category: Salad
+  name: Caprese Salad
+  photo: caprese_salad.jpg
