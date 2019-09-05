@@ -13,6 +13,9 @@
 - category: Beef
   name: Fire grilled steak
   photo: steak.jpg
+- category: Chicken
+  name: Smoked Chicken Wings
+  photo: smoked_chicken_wings.jpg
 - category: Fish
   name: Salmon
   photo: salmon.jpg
