@@ -1,3 +1,13 @@
+# Header content
+title: Miller Menu | Options for what to eat at the Miller House BBQ
+email: jeffmiller00@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  We're always wondering what people want when they come visit us, so we created a
+  menu with the options we have for serving our guests & family.
+keywords: Miller,BBQ,smoking
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://www.millermenu.com" # the base hostname & protocol for your site, e.g. http://example.com
+
 # Where things are
 source              : .
 destination         : ./_site
