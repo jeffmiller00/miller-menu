@@ -1,6 +1,9 @@
 - category: Salad
   name: Homegrown Garden Salad
   photo: salad.jpg
+- category: Starch
+  name: Parmesan Herb Roasted Potatoes
+  photo: parm_potatoes.jpg
 - category: Veggies
   name: Pan fried green beans
   photo: green_beans.jpg
