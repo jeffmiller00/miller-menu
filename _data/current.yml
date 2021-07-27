@@ -13,6 +13,12 @@
 - category: Beef
   name: Fire grilled steak
   photo: steak.jpg
+- category: Turkey
+  name: Rosemary, white wine turkey
+  photo: turkey.jpg
+- category: Venison
+  name: Wild Maui Venison Ribs
+  photo: venison-ribs.jpg
 - category: Chicken
   name: Smoked Chicken Wings
   photo: smoked_chicken_wings.jpg
@@ -25,3 +31,9 @@
 - category: Chicken
   name: Island Chicken
   photo: island-chicken.jpg
+- category: Beef
+  name: Roasted Herb-Crusted Beef Tenderloin
+  photo: beef_tenderloin.jpg
+- category: Shellfish
+  name: Paella Shellfish & Chicken or Sausages
+  photo: seafood-paella.jpg
