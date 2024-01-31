@@ -7,6 +7,15 @@
 - category: Beef / Chicken / Shrimp / Pork
   name: Tacos
   photo: tacos.jpg
+- category: Venison
+  name: Wild Maui Venison Ribs
+  photo: venison-ribs.jpg
+- category: Chicken
+  name: Smoked Chicken Wings
+  photo: smoked_chicken_wings.jpg
+- category: Beef
+  name: Roasted Herb-Crusted Beef Tenderloin
+  photo: beef_tenderloin.jpg
 - category: Chicken
   name: Whole roasted chicken
   photo: chicken.jpg
@@ -16,21 +25,18 @@
 - category: Turkey
   name: Rosemary, white wine turkey
   photo: turkey.jpg
-- category: Venison
-  name: Wild Maui Venison Ribs
-  photo: venison-ribs.jpg
-- category: Chicken
-  name: Smoked Chicken Wings
-  photo: smoked_chicken_wings.jpg
-- category: Fish
-  name: Salmon
-  photo: salmon.jpg
 - category: Beef
   name: Brisket
   photo: brisket.jpg
+- category: Fish
+  name: Glazed Salmon
+  photo: salmon.jpg
 - category: Chicken
   name: Island Chicken
   photo: island-chicken.jpg
+- category: Venison
+  name: Wild Maui Venison Roast
+  photo: venison_roast.jpg
 - category: Beef
   name: Roasted Herb-Crusted Beef Tenderloin
   photo: beef_tenderloin.jpg
