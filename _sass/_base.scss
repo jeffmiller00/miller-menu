@@ -1,3 +1,7 @@
+@use "sass:color";
+@use "mixins";
+@use "theme_colors";
+
 html,
 body {
     height: 100%;
@@ -5,11 +9,11 @@ body {
 }
 
 body {
-    @include serif-font;
+    @include mixins.serif-font;
 }
 
 hr {
-    border-color: $theme-primary;
+    border-color: theme_colors.$theme-primary;
     border-width: 3px;
     max-width: 50px;
 }
@@ -19,11 +23,11 @@ hr.light {
 }
 
 a {
-    @include transition-all;
-    color: $theme-primary;
+    @include mixins.transition-all;
+    color: theme_colors.$theme-primary;
     &:hover,
     &:focus {
-        color: darken($theme-primary, 10%);
+        color: color.mix(black, theme_colors.$theme-primary, 10%);
     }
 }
 
@@ -33,7 +37,7 @@ h3,
 h4,
 h5,
 h6 {
-    @include sans-serif-font;
+    @include mixins.sans-serif-font;
 }
 
 p {
@@ -43,11 +47,11 @@ p {
 }
 
 .bg-primary {
-    background-color: $theme-primary;
+    background-color: theme_colors.$theme-primary;
 }
 
 .bg-dark {
-    background-color: $theme-dark;
+    background-color: theme_colors.$theme-dark;
     color: white;
 }
 
@@ -71,17 +75,17 @@ aside {
 
 .navbar-default {
     background-color: white;
-    border-color: rgba($theme-dark, .5);
-    @include sans-serif-font;
-    @include transition-all;
+    border-color: rgba(theme_colors.$theme-dark, .5);
+    @include mixins.sans-serif-font;
+    @include mixins.transition-all;
     .navbar-header .navbar-brand {
-        color: $theme-primary;
-        @include sans-serif-font;
+        color: theme_colors.$theme-primary;
+        @include mixins.sans-serif-font;
         font-weight: 700;
         text-transform: uppercase;
         &:hover,
         &:focus {
-            color: darken($theme-primary, 10%);
+            color: color.mix(black, theme_colors.$theme-primary, 10%);
         }
     }
     .nav {
@@ -91,15 +95,15 @@ aside {
                 text-transform: uppercase;
                 font-weight: 700;
                 font-size: 13px;
-                color: $theme-dark;
+                color: theme_colors.$theme-dark;
                 &:hover {
-                    color: $theme-primary;
+                    color: theme_colors.$theme-primary;
                 }
             }
             &.active {
                 > a,
                 > a:focus {
-                    color: $theme-primary !important;
+                    color: theme_colors.$theme-primary !important;
                     background-color: transparent;
                     &:hover {
                         background-color: transparent;
@@ -127,20 +131,20 @@ aside {
         }
         &.affix {
             background-color: white;
-            border-color: rgba($theme-dark, .5);
+            border-color: rgba(theme_colors.$theme-dark, .5);
             .navbar-header .navbar-brand {
-                color: $theme-primary;
+                color: theme_colors.$theme-primary;
                 font-size: 14px;
                 &:hover,
                 &:focus {
-                    color: darken($theme-primary, 10%);
+                    color: color.mix(black, theme_colors.$theme-primary, 10%);
                 }
             }
             .nav > li > a,
             .nav > li > a:focus {
-                color: $theme-dark;
+                color: theme_colors.$theme-dark;
                 &:hover {
-                    color: $theme-primary;
+                    color: theme_colors.$theme-primary;
                 }
             }
         }
@@ -153,7 +157,7 @@ header {
     position: relative;
     width: 100%;
     min-height: auto;
-    @include background-cover;
+    @include mixins.background-cover;
     background-position: center;
     background-image: url('../img/header.jpg');
     text-align: center;
@@ -234,13 +238,13 @@ header {
         color: white;
         opacity: 0;
         display: block;
-        background: rgba( $theme-primary, .9 );
+        background: rgba( theme_colors.$theme-primary, .9 );
         position: absolute;
         bottom: 0;
         text-align: center;
         width: 100%;
         height: 100%;
-        @include transition-all;
+        @include mixins.transition-all;
         .portfolio-box-caption-content {
             width: 100%;
             text-align: center;
@@ -249,7 +253,7 @@ header {
             transform: translateY(-50%);
             .project-category,
             .project-name {
-                @include sans-serif-font;
+                @include mixins.sans-serif-font;
                 padding: 0 15px;
             }
             .project-category {
@@ -289,7 +293,7 @@ header {
 
 // Bootstrap Overrides
 .text-primary {
-    color: $theme-primary;
+    color: theme_colors.$theme-primary;
 }
 
 .no-gutter > [class*='col-'] {
@@ -299,15 +303,15 @@ header {
 
 // Button Styles
 .btn-default {
-    @include button-variant($theme-dark, white, white);
+    @include mixins.button-variant(theme_colors.$theme-dark, white, white);
 }
 
 .btn-primary {
-    @include button-variant(white, $theme-primary, $theme-primary);
+    @include mixins.button-variant(white, theme_colors.$theme-primary, theme_colors.$theme-primary);
 }
 
 .btn {
-    @include sans-serif-font;
+    @include mixins.sans-serif-font;
     border: none;
     border-radius: 300px;
     font-weight: 700;
@@ -319,8 +323,8 @@ header {
 }
 
 // Contact
-#contact .fa, #contact .fab {
-    color: $theme-dark;
+#contact .fa, #contact .fab, #contact .fa-solid{
+    color: theme_colors.$theme-dark;
     font-size: 4em;
 }
 
@@ -329,13 +333,13 @@ header {
 ::-moz-selection {
     color: white;
     text-shadow: none;
-    background: $theme-dark;
+    background: theme_colors.$theme-dark;
 }
 
 ::selection {
     color: white;
     text-shadow: none;
-    background: $theme-dark;
+    background: theme_colors.$theme-dark;
 }
 
 img::selection {
@@ -349,6 +353,6 @@ img::-moz-selection {
 }
 
 body {
-    -webkit-tap-highlight-color: $theme-dark;
+    -webkit-tap-highlight-color: theme_colors.$theme-dark;
 }
 
