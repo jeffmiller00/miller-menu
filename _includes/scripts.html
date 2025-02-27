@@ -23,7 +23,7 @@
       var randomNum = Math.floor(Math.random()*length);
       var randomItem = recipeSlugs[randomNum];
 
-      var randomRecipe = '<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="400" src="https://biggreenegg.com/recipes/'+randomItem+'/"></iframe>'
+      var randomRecipe = '<a target="_blank" href="https://biggreenegg.com/blogs/recipes/'+randomItem+'/">'+randomItem+'</a>'
 
       // replace the contents of the div with the link text
       $('#randomRecipe').html(randomRecipe);
